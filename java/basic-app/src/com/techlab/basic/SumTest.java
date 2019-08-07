@@ -5,13 +5,9 @@ public class SumTest {
 		System.out.println(args.length);
 		int argSize = args.length;
 		int sum = 0;
-		int[] arr = new int[argSize];
 		for (int i = 0; i < argSize; i++) {
-			arr[i] = Integer.parseInt(args[i]);
-		}
-		for (int m = 0; m < argSize; m++) {
-			sum = arr[m] + sum;
-		}
+			sum = Integer.parseInt(args[i]) + sum;
+			}
 		System.out.println("sum of" + argSize + "number is " + sum);
 	}
 }
